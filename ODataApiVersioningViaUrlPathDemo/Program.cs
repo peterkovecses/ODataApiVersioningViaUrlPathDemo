@@ -9,7 +9,7 @@ builder.Services
     .AddApiVersioning(options =>
     {
         options.ReportApiVersions = true;
-        options.DefaultApiVersion = new ApiVersion(2);
+        options.DefaultApiVersion = new ApiVersion(1);
         options.AssumeDefaultVersionWhenUnspecified = true;
     })
     .AddOData(options =>
