@@ -1,6 +1,6 @@
 using Asp.Versioning;
 using Microsoft.AspNetCore.OData;
-using ODataApiVersioningViaUrlPathDemo.Models;
+using ODataApiVersioningViaUrlPathDemo.Models.V1;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,10 +14,10 @@ builder.Services
     })
     .AddOData(options =>
     {
-        options.ModelBuilder.DefaultModelConfiguration = (builder, apiVersion, routePrefix) =>
-        {
-            builder.EntitySet<Person>("People");
-        };
+        //options.ModelBuilder.DefaultModelConfiguration = (builder, apiVersion, routePrefix) =>
+        //{
+        //    builder.EntitySet<Person>("People");
+        //};
         options.AddRouteComponents("api/v{version:apiVersion}");
     })
     .AddODataApiExplorer(options =>
