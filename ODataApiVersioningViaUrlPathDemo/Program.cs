@@ -1,6 +1,5 @@
 using Asp.Versioning;
 using Microsoft.AspNetCore.OData;
-using ODataApiVersioningViaUrlPathDemo.Models.V1;
 
 var builder = WebApplication.CreateBuilder(args);
 
