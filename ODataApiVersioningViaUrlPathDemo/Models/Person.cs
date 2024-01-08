@@ -1,4 +1,4 @@
-﻿namespace ODataURLSegmentRoutingDemo.Models;
+﻿namespace ODataApiVersioningViaUrlPathDemo.Models;
 
 public class Person
 {

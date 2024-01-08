@@ -1,6 +1,6 @@
 using Asp.Versioning;
 using Microsoft.AspNetCore.OData;
-using ODataURLSegmentRoutingDemo.Models;
+using ODataApiVersioningViaUrlPathDemo.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

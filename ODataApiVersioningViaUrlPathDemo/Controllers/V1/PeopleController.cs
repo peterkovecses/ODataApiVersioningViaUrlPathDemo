@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Query;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
-using ODataURLSegmentRoutingDemo.Models;
+using ODataApiVersioningViaUrlPathDemo.Models;
 
-namespace ODataURLSegmentRoutingDemo.Controllers.V1;
+namespace ODataApiVersioningViaUrlPathDemo.Controllers.V1;
 
 [ApiVersion(1)]
 public class PeopleController : ODataController
