@@ -14,10 +14,6 @@ builder.Services
     })
     .AddOData(options =>
     {
-        //options.ModelBuilder.DefaultModelConfiguration = (builder, apiVersion, routePrefix) =>
-        //{
-        //    builder.EntitySet<Person>("People");
-        //};
         options.AddRouteComponents("api/v{version:apiVersion}");
     })
     .AddODataApiExplorer(options =>
